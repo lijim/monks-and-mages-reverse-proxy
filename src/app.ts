@@ -1,6 +1,6 @@
 import { server } from './server';
 
-const { PORT = 5001 } = process.env;
+const { PORT = 4001 } = process.env;
 
 server.listen(PORT, () => {
   // eslint-disable-next-line no-console
