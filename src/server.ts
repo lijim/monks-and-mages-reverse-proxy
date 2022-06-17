@@ -6,7 +6,7 @@ export const server = express();
 // API server
 const apiServerOptions: Options = {
   target:
-    process.env.NODE_ENV === 'dev'
+    process.env.NODE_ENV === 'development'
       ? 'http://localhost:5001'
       : 'https://monks-and-mages-db.onrender.com',
   changeOrigin: true,
