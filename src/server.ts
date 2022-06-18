@@ -21,7 +21,7 @@ server.use('/api', apiServerProxy);
 
 const gameServerOptions: Options = {
   target:
-    process.env.NODE_ENV === 'dev'
+    process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000'
       : 'https://monks-and-mages.onrender.com/',
   changeOrigin: true,
